@@ -9,3 +9,4 @@ P1 Add map for location.
 
 P2 Ability to share a comment on a lesson after they’ve attended.
 
+Wireframe: https://wireframe.cc/jON03o
