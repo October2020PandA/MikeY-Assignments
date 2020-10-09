@@ -5,8 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+<meta charset="ISO-8859-1">
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 			rel="stylesheet" 
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
 			crossorigin="anonymous">
@@ -15,8 +16,9 @@
 <body>
 <div class="container">
 <div class="row">
-<div class="col">
-    <h1>Register!</h1>
+<div class="col" style= "width:100px; margin:50px; border: 1px solid black;">
+    <h1>New User</h1> 
+    <p>create an account in the music lessons app</p>
     <p><form:errors path="user.*"/></p>
     
     <form:form method="POST" action="/" modelAttribute="user">
@@ -43,9 +45,9 @@
         <input class="btn btn-primary" type="submit" value="Register!"/>
     </form:form>
     </div>
-    <div class="col">
+    <div class="col" style="border: 1px solid black; height:250px; margin-top:20px;">
     <p>already registered?</p>
-     <h3>Login</h3>
+     <h3>Sign In</h3>
     	<form method="post" action="/login">
         <p>
             <label type="email" for="email">Email:</label>
@@ -55,7 +57,7 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password"/>
         </p>
-        <input class="btn btn-danger" type="submit" value="Login!"/>
+        <input class="btn btn-success" type="submit" value="Login!"/>
         </form>
     </div>
     </div>

@@ -2,6 +2,8 @@ package com.mike.musicLesson.services;
 
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +37,7 @@ public class LessonService {
 		// add the students to the lesson
 		students.add(user);
 		//update the db and save
+		JOptionPane.showMessageDialog(null, "Congratulations, you have successfully enrolled!");
 		this.lRepo.save(lesson);
 	}
 	
@@ -43,17 +46,21 @@ public class LessonService {
 		List<User> students = lesson.getStudents();
 		//remove student from lesson
 		students.remove(user);
-		//update db 
+		//update db
+//		JOptionPane.showMessageDialog(null, "You have been successfully un-enrolled");
 		this.lRepo.save(lesson);
 	}
 	
 	//delete a lesson
-	public void deleteWedding(Long id) {
+	public void deleteLesson(Long id) {
 		lRepo.deleteById(id);
 	}
 	
 	//update lesson
 	public Lesson updateLesson(Long id, Lesson updatedLesson) {
+		return this.lRepo.save(updatedLesson);
+	}
+	public Lesson updateLesson(Lesson updatedLesson) {
 		return this.lRepo.save(updatedLesson);
 	}
 }
