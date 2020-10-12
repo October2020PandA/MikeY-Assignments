@@ -14,9 +14,9 @@
 </head>
 <body>
 	<div class="container">
-			<h1>Welcome to Music Lessons, <c:out value="${user.firstName}" />!</h1>
+			<h1 style="text-align:center;">Welcome to Music Lessons, <c:out value="${user.firstName}" />!</h1>
 			<a href="/logout" class="btn btn-outline-secondary">Logout</a>
-			<hr />
+			<hr/>
 			<table class="table table-dark table-hover">
 			<thead>
 			<tr>

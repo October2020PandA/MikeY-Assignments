@@ -15,8 +15,9 @@
 </head>
 <body>
 <div class="container">
+<h1 style="text-align:center;">Welcome to Music Lessons.com !</h1>
 <div class="row">
-<div class="col" style= "width:100px; margin:50px; border: 1px solid black;">
+<div class="col" style="width:100px; margin:50px; border: 1px solid black;">
     <h1>New User</h1> 
     <p>create an account in the music lessons app</p>
     <p><form:errors path="user.*"/></p>
